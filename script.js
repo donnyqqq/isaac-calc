@@ -10,6 +10,16 @@ let polyph = {
     spd: 0,
     luck: 0
 }
+let momsknife = {
+    id: 114,
+    dmg: damage*2,
+    hrt: 0,
+    trs: 0,
+    rng: 0,
+    spdShot: 0,
+    spd: 0,
+    luck: 0
+}
 let brim = {
     id: 118,
     dmg: damage,
