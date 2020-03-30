@@ -2,15 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta content="width=device-width" name="viewport">
     <title>Synergies Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+  <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <div id='stats'></div>
-    <img id='polyph' src='https://vignette.wikia.nocookie.net/bindingofisaac/images/2/2b/Polyphemus_Icon.png/revision/latest/top-crop/width/220/height/220?cb=20180915111202&path-prefix=ru' alt='Polyphemus' onclick="setArt(polyph)" width="100" height="100" onmouseover="document.getElementById('polyph').style = 'width:110px;height:110px;'" onmouseout="document.getElementById('polyph').style = 'width:100px;height:100px;'">
-    <img id='brim' src='https://vignette.wikia.nocookie.net/bindingofisaac/images/a/a4/118collectibles.png/revision/latest/top-crop/width/220/height/220?cb=20181213064559&path-prefix=ru' alt='Brimstone' onclick="setArt(brim)" width="100" height="100" onmouseover="document.getElementById('brim').style = 'width:110px;height:110px;'" onmouseout="document.getElementById('brim').style = 'width:100px;height:100px;'">
-    <img id='momsknife' src='https://gamepedia.cursecdn.com/bindingofisaacre_gamepedia/7/79/Collectible_Mom%27s_Knife_icon.png?version=0ed01e22a0c9c4f0f1ca8ef2a2532b85' alt="Mom's knife" onclick="setArt(momsknife)" width="100" height="100" onmouseover="document.getElementById('momsknife').style = 'width:110px;height:110px;'" onmouseout="document.getElementById('momsknife').style = 'width:100px;height:100px;'">
+    <div class="artefactWrapper">
+    <img alt='Polyphemus'
+         height="100"
+         width="100"
+         id='polyph'
+         class="artefact"
+         src='https://vignette.wikia.nocookie.net/bindingofisaac/images/2/2b/Polyphemus_Icon.png/revision/latest/top-crop/width/220/height/220?cb=20180915111202&path-prefix=ru'
+         />
+    <img
+            alt='Brimstone'
+            height="100"
+            id='brim'
+            class="artefact"
+            src='https://vignette.wikia.nocookie.net/bindingofisaac/images/a/a4/118collectibles.png/revision/latest/top-crop/width/220/height/220?cb=20181213064559&path-prefix=ru'
+            width="100" />
+    <img
+            class="artefact"
+            alt="Mom's knife"
+            height="100"
+            id='momsknife'
+            src='https://gamepedia.cursecdn.com/bindingofisaacre_gamepedia/7/79/Collectible_Mom%27s_Knife_icon.png?version=0ed01e22a0c9c4f0f1ca8ef2a2532b85'
+            width="100" />
+    </div>
   </body>
 </html>

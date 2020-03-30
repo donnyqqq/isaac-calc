@@ -1,3 +1,17 @@
-img{
-margin-right: 200%;
+.artefactWrapper{
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+.artefact{
+    display: inline-block;
+
+}
+.artefact:hover{
+    opacity: 1;
+    width: 150px;
+    height: 150px;
+}
+.artefact:active{
+    opacity: 0.6;
 }
