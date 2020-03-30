@@ -52,6 +52,16 @@ let artefacts = {
         spd: 0,
         luck: 0
     },
+    'ipecac': {
+        id: 149,
+        dmg: damage+40,
+        hrt: 0,
+        trs: tears*4,
+        rng: 0,
+        spdShot: -10,
+        spd: 0,
+        luck: 0
+    },
 }
 let slots = [];
 
@@ -75,6 +85,7 @@ const setStats = () => {
     <strong>Shot Speed:</strong>${shsp}</br> 
     <strong>Speed:</strong>${sped}</br> 
     <strong>Luck:</strong>${luzck}`
+    //gifs
     switch(slots[0]){
         case artefacts.brim:
             if(slots[1] == artefacts.momsknife){
@@ -99,7 +110,19 @@ const setStats = () => {
             }else{
                 document.getElementById('gif').src = ''
             }
+            if(slots[1] == artefacts.ipecac){
+                document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694266478303903855/ezgif.com-video-to-gif_1.gif'
+            }else{
+                document.getElementById('gif').src = ''
+            }
             break;
+        case artefacts.ipecac:
+                if(slots[1] == artefacts.epicfetus){
+                    document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694266478303903855/ezgif.com-video-to-gif_1.gif'
+                }else{
+                    document.getElementById('gif').src = ''
+                }
+                break;    
         default: 
         document.getElementById('gif').src = ''
         break;
