@@ -108,13 +108,11 @@ const setStats = () => {
             if(slots[1] == artefacts.momsknife){
                 document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694217719108862042/42c02702a9f8a38a.gif'
             }else{
-                document.getElementById('gif').src = ''
-            }
             if(slots[1] == artefacts.ipecac){
                 document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694266478303903855/ezgif.com-video-to-gif_1.gif'
             }else{
                 document.getElementById('gif').src = ''
-            }
+            }}
             break;
         case artefacts.ipecac:
                 if(slots[1] == artefacts.epicfetus){
