@@ -78,24 +78,24 @@ const setStats = () => {
     switch(slots[0]){
         case artefacts.brim:
             if(slots[1] == artefacts.momsknife){
-                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-024de6572c7d.gif'
+                document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694218286015053894/ezgif.com-video-to-gif.gif'
             }else{
                 document.getElementById('gif').src = ''
             }
             break;
         case artefacts.momsknife:
             if(slots[1] == artefacts.brim){
-                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-024de6572c7d.gif'
+                document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694218286015053894/ezgif.com-video-to-gif.gif'
             }else{
             if(slots[1] == artefacts.epicfetus){
-                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-84d9b81fa10f.gif'
+                document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694217719108862042/42c02702a9f8a38a.gif'
             }else{
                 document.getElementById('gif').src = ''
             }}
             break;
         case artefacts.epicfetus:
             if(slots[1] == artefacts.momsknife){
-                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-84d9b81fa10f.gif'
+                document.getElementById('gif').src = 'https://cdn.discordapp.com/attachments/690187556721131611/694217719108862042/42c02702a9f8a38a.gif'
             }else{
                 document.getElementById('gif').src = ''
             }
