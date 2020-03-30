@@ -1,4 +1,5 @@
 let damage = 3.50
+let scr
 let tears = 1
 let artefacts = {
     'polyph' : {
@@ -30,7 +31,27 @@ let artefacts = {
         spdShot: 0,
         spd: 0,
         luck: 0
-    }
+    },
+    'soymilk': {
+        id: 330,
+        dmg: damage*0.2,
+        hrt: 0,
+        trs: (tears/4)-2,
+        rng: 0,
+        spdShot: 0,
+        spd: 0,
+        luck: 0
+    },
+    'epicfetus': {
+        id: 168,
+        dmg: damage*20,
+        hrt: 0,
+        trs: 0,
+        rng: 0,
+        spdShot: 0,
+        spd: 0,
+        luck: 0
+    },
 }
 let slots = [];
 
@@ -54,6 +75,35 @@ const setStats = () => {
     <strong>Shot Speed:</strong>${shsp}</br> 
     <strong>Speed:</strong>${sped}</br> 
     <strong>Luck:</strong>${luzck}`
+    switch(slots[0]){
+        case artefacts.brim:
+            if(slots[1] == artefacts.momsknife){
+                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-024de6572c7d.gif'
+            }else{
+                document.getElementById('gif').src = ''
+            }
+            break;
+        case artefacts.momsknife:
+            if(slots[1] == artefacts.brim){
+                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-024de6572c7d.gif'
+            }else{
+            if(slots[1] == artefacts.epicfetus){
+                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-84d9b81fa10f.gif'
+            }else{
+                document.getElementById('gif').src = ''
+            }}
+            break;
+        case artefacts.epicfetus:
+            if(slots[1] == artefacts.momsknife){
+                document.getElementById('gif').src = 'https://im6.ezgif.com/tmp/ezgif-6-84d9b81fa10f.gif'
+            }else{
+                document.getElementById('gif').src = ''
+            }
+            break;
+        default: 
+        document.getElementById('gif').src = ''
+        break;
+    }
 }
 $(document).ready(()=>{
     $('.artefact').click(function  () {
